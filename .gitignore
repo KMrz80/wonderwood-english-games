@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.vite/
+responsive-check/
+dev-server.*.log
+*.log
+.chrome*/
+.edge*/
+*browser-profile*/
+*chrome-profile*/
+final-browser-check.mjs

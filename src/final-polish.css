@@ -1,0 +1,40 @@
+/* Final product polish: preserve artwork proportions and keep touch layouts stable. */
+img{max-width:100%}
+.card-image img,.machine-stage img,.launch-machine img,.courier img,.route-squirrel img{object-fit:cover}
+.start-art img,.cover img,.final-art img,.big-room img{height:auto;object-fit:contain}
+.topic-card .word-art{width:76px!important;height:auto!important;aspect-ratio:1}
+.answer-card .word-art{height:auto!important;min-height:0!important;aspect-ratio:1}
+.answer-card .word-art[data-color][data-topic="Toys"]{aspect-ratio:3/4}
+.answer-card .word-art[data-color][data-topic="School"]{aspect-ratio:1}
+.answer-card .word-art[data-color][data-word="pencil"]{aspect-ratio:1/2}
+.machine-game .situation-art{width:min(100%,430px)!important;height:auto!important;margin-inline:auto;aspect-ratio:1/1!important;background-size:300% 200%;background-repeat:no-repeat}
+.mini-scene span{width:100%;height:auto!important;aspect-ratio:5/3}
+.big-room img{display:block;width:100%}
+.card-body p{min-height:66px}
+
+/* Each successful sentence now produces its own visible repair event. */
+.calm-machine .repair-nodes i.fixed:nth-child(1){background:#ffe36a;animation:node-lamp .7s ease 2}
+.calm-machine .repair-nodes i.fixed:nth-child(2){background:#65c9ac;animation:node-spin .8s linear 2}
+.calm-machine .repair-nodes i.fixed:nth-child(3){background:#75b8e8;animation:node-pump .45s ease 3}
+.calm-machine .repair-nodes i.fixed:nth-child(4){background:#ef9f59;animation:node-gauge .6s ease 2}
+.calm-machine .repair-nodes i.fixed:nth-child(5){background:#ba8ce8;animation:node-charge .8s ease 2}
+.calm-machine .repair-nodes i.fixed:nth-child(6){background:#84df69;animation:node-power .65s ease 3}
+@keyframes node-lamp{50%{filter:brightness(1.8);box-shadow:0 0 34px #fff36e}}
+@keyframes node-spin{to{transform:rotate(360deg) scale(1.12)}}
+@keyframes node-pump{50%{transform:translateY(-7px) scale(1.1)}}
+@keyframes node-gauge{50%{transform:rotate(25deg) scale(1.18)}}
+@keyframes node-charge{50%{box-shadow:0 0 0 10px #d4a7ff55,0 0 26px #d4a7ff}}
+@keyframes node-power{50%{transform:scale(1.35);filter:brightness(1.5)}}
+
+@media(max-width:768px){
+  .card-body p{min-height:0}
+  .start-art,.cover,.intro{min-width:0;width:100%}
+  .start-art img,.cover img{width:100%;height:auto}
+  .sentence-slots,.word-bank{max-width:100%;overflow-wrap:anywhere}
+  .machine-game .situation-art{aspect-ratio:1/1!important}
+}
+@media(max-width:430px){
+  .topic-card .word-art{width:66px!important}
+  .answer-card .word-art{height:auto!important}
+  .card-actions{flex-wrap:wrap}.card-actions>*{min-width:120px}
+}

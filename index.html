@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#173f35" />
+    <meta name="description" content="Wonderwood English Games — playful English practice for young learners." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <title>Wonderwood English Games</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Wonderwood home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M25 4c7 7 8 13 5 18 6-4 11-2 13 2-3 9-10 12-18 9v11h-5V33C11 36 5 31 5 24c4-4 9-5 14-2C15 14 19 8 25 4Z" fill="currentColor"/><path d="M13 38h22" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
+        </span>
+        <span><b>Wonderwood</b><small>English Games</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="active" href="#top">Home</a><a href="#games">Games</a><a href="#about">About</a><a href="#parents">For parents</a>
+      </nav>
+      <a class="header-cta" href="#games">Explore games <span aria-hidden="true">→</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-backdrop" role="img" aria-label="A squirrel, raccoon and owl in an enchanted woodland workshop"></div>
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> English adventures begin here</p>
+          <h1 id="hero-title">Welcome to <em>Wonderwood</em></h1>
+          <p>Три игры по английскому для младших школьников</p>
+          <div class="hero-actions"><a class="button button-primary" href="#games">Choose a game <span>→</span></a><a class="text-link" href="#about"><span class="play-dot">▶</span> Take a little tour</a></div>
+        </div>
+        <a class="scroll-cue" href="#games" aria-label="Scroll to games"><span>Discover</span><i>↓</i></a>
+      </section>
+
+      <section class="games-section" id="games" aria-labelledby="games-title">
+        <header class="section-heading"><p class="eyebrow centered"><span></span> Pick your path <span></span></p><h2 id="games-title">Three adventures await</h2><p>Each game grows with the learner across three gentle levels.</p></header>
+        <div class="game-grid">
+          <article class="game-card" style="--accent:#167d6a;--pale:#dff2e9">
+            <div class="card-image"><img src="/images/forest-delivery.png" alt="Squirrel courier delivering a parcel to forest homes" /><span class="subject-tag">Vocabulary</span><span class="level-tag">3 levels</span></div>
+            <div class="card-body"><div class="card-number">01</div><h3>Forest Delivery</h3><p>Белочка Пип должна успеть до заката развезти все посылки. Выбирай правильные дороги по английским словам.</p><div class="card-actions"><a class="button card-play" href="./forest-delivery.html">Играть <span>→</span></a><button class="how-button" data-game="delivery">Как играть</button></div></div>
+          </article>
+          <article class="game-card" style="--accent:#c47724;--pale:#faead4">
+            <div class="card-image"><img src="/images/fix-the-machine.png" alt="Raccoon inventor repairing a whimsical word machine" /><span class="subject-tag">Grammar</span><span class="level-tag">3 levels</span></div>
+            <div class="card-body"><div class="card-number">02</div><h3>Fix the Machine</h3><p>Помоги еноту Реми собрать английские команды, починить все механизмы и запустить машину.</p><div class="card-actions"><a class="button card-play" href="./fix-the-machine.html">Играть <span>→</span></a><button class="how-button" data-game="machine">Как играть</button></div></div>
+          </article>
+          <article class="game-card" style="--accent:#d95547;--pale:#fbe4dd">
+            <div class="card-image"><img src="/images/wheres-my-toy.png" alt="Owl teacher pointing to toys around a cozy room" /><span class="subject-tag">Prepositions</span><span class="level-tag">3 levels</span></div>
+            <div class="card-body"><div class="card-number">03</div><h3>Where’s My Toy?</h3><p>Сова Олив расследует пропажу игрушек. Слушай подсказки и найди все вещи, пока не села батарея.</p><div class="card-actions"><a class="button card-play" href="./wheres-my-toy.html">Играть <span>→</span></a><button class="how-button" data-game="toys">Как играть</button></div></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="promise" id="about"><div><p class="eyebrow"><span></span> Built for little learners</p><h2>Playful practice.<br><em>Real progress.</em></h2></div><div class="promise-grid"><article><b>01</b><h3>Three gentle levels</h3><p>Every adventure starts simple and grows one confident step at a time.</p></article><article><b>02</b><h3>Beautifully illustrated</h3><p>Warm stories and expressive characters make every task feel like play.</p></article><article><b>03</b><h3>Sound-led learning</h3><p>Clear audio, friendly feedback and listening activities support pronunciation.</p></article></div></section>
+      <section class="parents" id="parents"><p>For grown-ups</p><h2>Small adventures, thoughtfully made.</h2><span>Curriculum-aligned practice with no ads, pressure or distractions.</span></section>
+    </main>
+    <footer><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M25 4c7 7 8 13 5 18 6-4 11-2 13 2-3 9-10 12-18 9v11h-5V33C11 36 5 31 5 24c4-4 9-5 14-2C15 14 19 8 25 4Z" fill="currentColor"/></svg></span><span><b>Wonderwood</b><small>English Games</small></span></a><p>Learn bravely. Play kindly. Stay curious.</p><small>© 2026 Wonderwood</small></footer>
+
+    <dialog class="game-dialog" aria-labelledby="dialog-title"><div class="dialog-accent" aria-hidden="true"></div><button class="dialog-close" type="button" aria-label="Закрыть инструкцию">×</button><span class="dialog-kicker">Как играть</span><h2 id="dialog-title"></h2><ol class="dialog-steps"></ol><button class="button button-primary dialog-ok" type="button">Понятно</button></dialog>
+    <div class="toast" role="status" aria-live="polite"><b></b><span>Игра появится после утверждения механики.</span></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
