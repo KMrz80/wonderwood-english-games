@@ -7,6 +7,8 @@ img{max-width:100%}
 .answer-card .word-art[data-color][data-topic="Toys"]{aspect-ratio:3/4}
 .answer-card .word-art[data-color][data-topic="School"]{aspect-ratio:1}
 .answer-card .word-art[data-color][data-word="pencil"]{aspect-ratio:1/2}
+.answer-card .word-art[data-topic="Toys"][data-word="robot"],.answer-card .word-art[data-topic="Toys"][data-word="kite"]{height:auto!important;aspect-ratio:1!important}
+.topic-card .word-art[data-topic="Toys"][data-word="robot"],.topic-card .word-art[data-topic="Toys"][data-word="kite"]{width:76px!important;height:auto!important;aspect-ratio:1!important}
 .machine-game .situation-art{width:min(100%,430px)!important;height:auto!important;margin-inline:auto;aspect-ratio:1/1!important;background-size:300% 200%;background-repeat:no-repeat}
 .mini-scene span{width:100%;height:auto!important;aspect-ratio:5/3}
 .big-room img{display:block;width:100%}
